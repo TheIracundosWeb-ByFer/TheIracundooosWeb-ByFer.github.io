@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #411412;
+    color:#ddd;
+}
+
+body header{
+color: #c21f1f;
+}
+
+.Body-Index {
+  background-image: url(../imagenes/b863448b-f526-47a7-b10e-408ca1211d27.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px 1080px;
+}
+.Body-Index h1 {
+  color: #d31515;
+}
+.Body-Index h3 {
+  color: #f3eded;
+}
+.Body-Index h4 {
+  color: #ddd;
+}
+.Body-Index p {
+  color: #ddd;
+}
+
+
+.Proceso {
+  background-image: url(../imagenes/En\ proceso.PNG);
+  background-repeat: ;
+  background-position:center;
+  background-size: ;
+}
+
+header {
+    background-color: #dfc4c3ea;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(153, 42, 42);
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: rgb(153, 42, 42);
+    padding: 15px ;
+}
+section aside h4  {
+    position: relative;
+    top: -200px;
+    left: 10px;
+    display: flex;
+}
+
+section aside form {
+    position: relative;
+    top: -195px;
+    left: 10px;
+   width: 90px;
+   justify-content:right;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 150px; (no se pega al footer)
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%; /* Establece el ancho del contenedor de la imagen */
+    height: 400px; /* Establece la altura fija del contenedor de la imagen */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+/* Estilos de las flechas de navegación */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: auto;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* 3 slides */
+}
+
+.slide {
+  flex: 1;
+  transition: 0.5s;
+}
+
+.slide1 {
+  background: url('imagenes/album1.jpg') center/cover no-repeat;
+}
+
+.slide2 {
+  background: url('image2.jpg') center/cover no-repeat;
+}
+
+.slide3 {
+  background: url('image3.jpg') center/cover no-repeat;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+input[type="radio"]:checked ~ .slides {
+  transform: translateX(-33.33%);
+}
+
+  .image-overlay {
+            
+  top: 0;
+  left: 0;
+  width: 100%; /* ajusta el ancho al del contenedor padre */
+  height: 100%; /* ajusta el alto al del contenedor padre */
+}
+
+ .image-overlay img {
+  width: 500px; /* ajusta el ancho de la imagen al del contenedor */
+  height: 500px; /* ajusta el alto de la imagen al del contenedor */
+  object-fit: cover; /* mantiene la relación de aspecto y rellena el contenedor */
+}
+
+
+
+
+ .integrantes {
+            margin-left: 5px;
+            
+}
+        .integrantes h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+
+
+
+		
+ }
+       .integrantes ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #d31515;
+            
+
+        }
+        .integrantes ul li {
+            margin-bottom: 5px;
+        }
+        .integrantes ol {
+            counter-reset: integrantes-counter;
+            padding-left: 20px;
+            background-color: #74661b;
+        }
+        .integrantes ol li {
+            margin-bottom: 5px;
+        }
+        .integrantes ol li::before {
+            content: counter(integrantes-counter) ". ";
+            counter-increment: integrantes-counter;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+.Imagen-dos {
+    width: 400px; /* Establece un ancho máximo del 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente con un margen superior e inferior */
+    
+}
+
+.letra-cancion {
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+        }
+        .ExIntegrante-Uno {
+          text-align: left;
+      }
+       .ExIntegrante-Dos {
+        
+       }
+
+       .ExIntegrante-Tres {
+        
+       }
+       .ExIntegrante-Cuatro {
+        
+       }
+       .ExIntegrante-Cinco {
+        position: relative ;
+        padding: 10px;
+        width: 900px;
+        height: -300px;
+
+       }
+       .ExIntegrante-Seis {
+        text-align:end;
+       }
+
+       .Historia-Tres {
+        text-align: justify;
+       }
+       .Historia-Uno {
+        text-align: justify;
+       }
+       .Historia-Dos {
+        text-align: justify;
+       }
+
+       .Historia-Original {
+        text-align: justify;
+       }

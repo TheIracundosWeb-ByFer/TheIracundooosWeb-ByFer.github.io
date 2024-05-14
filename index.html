@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilo/Estilo.css">
+    <title>Inicio</title>
+</head>
+<header ><H1>The Iracundos Web</H1>
+</header>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="./Paginas/Letras.html">Letras</a>
+    <a href="./Paginas/Integrantes.html">Integrantes</a>
+    <a href="./Paginas/Reproductor.html">Reproductor</a>
+    <a href="./Paginas/Buscador.html">Buscador</a>
+    <a href="https://losiracundos.com/">Los Nuevos Iracundos</a>
+    <a href="./Paginas/Historia.html">Historia</a>
+    <a href="./Paginas/Login.html">Login</a>
+</nav>
+<!--Este es el header del sitio Web-->
+<body class="Body-Index">
+<!-- Esta es la sección del contenido del archivo HTML --> 
+<h1>Bienvenidos a The Iracundos Web</h1>
+<h4>Pagina recopilatoria de informacion de los Iracundos, Banda Uruguaya que principalmente compone baladas.</h4>
+<h4>Aqui puedes encontrar informacion relevante, videos, imagenes y varios de los exitos.</h4>
+</body class="Reproductor-Tres">
+<h1>Grandes Exitos</h1>
+<h3>Los Iracundos</h3>
+    <audio controls>
+        <source src="./Musica/Los Iracundos 2024 MIX Grandes Exitos - Las Puertas Del Olvido, Tu Con +ël, Puerto Montt, Te Lo P....mp4" type="audio/mpeg">
+    </audio>
+<h1>Pequeña Introduccion</h1>
+<p>Los Iracundos es una banda uruguaya de pop originaria de Paysandú, considerada la más importante del género en la historia de Uruguay.Se originó en 1958 bajo el nombre Los Blue Kings, inspirada en el rock and roll estadounidense de la época, y tuvieron su debut oficial en 1961,​ año en que lanzaron su primer sencillo con el sello uruguayo Clave.</p>
+<H1>Imagenes varias de la banda</H1>
+
+ <div class="slider-container">
+    <div class="slider">
+        <div class="slide"><img src="imagenes/Album1.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/Album2.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/Album3.webp" alt=""></div>
+        <div class="slide"><img src="imagenes/cancion2.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/0885686134733_600.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/Tu con el.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/b863448b-f526-47a7-b10e-408ca1211d27.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/b1007850cc70100cbc3c54b48114591a.jpg" alt=""></div>
+        <div class="slide"><img src="imagenes/cancion1.jpg" alt=""></div>
+    </div>
+   <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+    <div class="next" onclick="moveSlide(1)">&#10095;</div>
+</div>
+
+<footer>
+    <p>Derechos de autor &copy; 2024 The Iracundos Web</p>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</html>
